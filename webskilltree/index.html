@@ -1,0 +1,917 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icons/electronics_skill_tree_icon.ico" type="image/x-icon">
+    <title>Web-Skill Tree : Electronics</title>
+    <link rel="stylesheet" href="asset/web_skill_tree/electronics_skill_tree/../../web_skill_trees_resources/styles.css">
+    <link rel="stylesheet" href="asset/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+</head>
+<body>
+    <h1>ELECTRONICS</h1>
+    <div class="skill-tree">
+        <div class="skill-tree-box">
+            <p>Skill Tree: Color in the boxes and level up your skills</p>
+        </div>
+    </div>
+    <p class="description">
+        Use for individuals or as a group by picking a colour each and coloring in a part of the box. Everyone’s journey is different and you can
+        interpret the goals flexibly. The aim is to inspire you to learn and try new things. Not everything needs to be completed.
+    </p>
+
+    <div class="print-button">
+        <button id="print-button"  onclick="printTables()"><i class="fas fa-print"></i> Print</button>
+       
+    </div>
+    <div class="color-picker">
+        <label for="color">Choose a color for marking: </label>
+        <input type="color" id="color"  value="#f4dc8b" name="color">
+        <p class="start-here">Start Here <i class="fa-solid fa-hourglass-start"></i> </p>
+        
+    </div>
+    <div class="svg-container">
+        <!-- Existing SVGs -->
+        <div class="svg-wrapper" data-id="1" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Light up an</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">LED for the first </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">time</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon1.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="2" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">use wire strippers </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon2.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="3" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Complete</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">an electronics kit  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon3.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="4" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to Solder</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon4.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="5" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to use</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">a breadboard</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon5.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="6" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Get a circuit</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">wrong and try</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">again</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon6.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="7" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn Ohm’s</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Law</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon7.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="8" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Fix something</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">that’s broken</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon8.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="9" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Measure </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">voltage with </tspan>
+                     <tspan x="50%" dy="1.2em" font-weight="bold">a multimeter</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon9.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="10" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">read a schematic</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon10.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="11" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to read</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">a datasheet</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon11.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="12" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">control the </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">brightness of</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> an LED</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon12.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="13" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">desolder a   </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">through hole</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">component</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon4.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="14" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something that </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">makes noise </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon14.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="15" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Turn a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">breadboard </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">circuit into a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">schematic</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon10.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="16" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Measure </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">current with a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">multimeter  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon9.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="17" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a voltage </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">divider to lower  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">the voltage  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">for a project  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon17.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="18" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Turn </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">on using  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">a sensor  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon18.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="19" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a diode </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">protect your  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">circuit from  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">reverse voltages  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon19.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="20" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make an </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">oscillator that</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">makes noise</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon14.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="21" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a relay </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">to switch</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something on at</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">a higher voltage</tspan>
+                    
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon21.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="22" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> capacitor rocket</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> (too much voltage)</tspan> 
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon22.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="23" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn to </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> solder surfcace</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> mount parts</tspan> 
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon23.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="24" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">  555 timer</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> in a circuit</tspan> 
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon24.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="25" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a sound </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> louder with an</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">amplifier</tspan> 
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon14.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="26" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">addressable </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> RGB LEDs in a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">project</tspan> 
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon12.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="27" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">project </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> with a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Raspberry Pi</tspan> 
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon27.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="28" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Let the </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">smoke out </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> accidentally  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon28.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="29" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use fritzing </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">or TinkerCAD </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> to create a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> circuit diagram  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon29.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="30" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> with Arduino  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon30.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="31" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Let the smoke </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">out of an Arduino </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> accidentally  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon31.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="32" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Measure </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">frequency with a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> multimeter  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon9.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="33" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use an </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Op-Amp  in</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">  a circuit  </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon33.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="34" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a crowbar</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">circuit to protect</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> against over voltage </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon17.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="35" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a surge</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">diode to protect</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> a circuit </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon19.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="36" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> for a friend </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon36.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="37" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a motor</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">controller with</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> a H Bridge </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon37.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="38" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">counter with</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> logic gates </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon38.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="39" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Apply solder</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">paste to a PCB</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> with a stencil</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon39.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="40" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Teach a</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">friend an</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> electronics skill </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon40.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="41" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make something</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">with a 7</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> segment display </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon41.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="42" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Measure</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">voltage with an</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> oscilloscope </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon42.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="43" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Measure</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">capacitor equivalent</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> series resistance </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon43.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="44" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make an</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Internet of Things</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">  (IoT) project </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon44.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="45" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">something with</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> solar panels </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon45.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="46" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Look at an </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> audio input</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">on an oscilloscope</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon46.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="47" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> regulated</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">power supply</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon47.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="48" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a MOSFET </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> instead of a relay</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">in a project</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon48.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="49" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make your </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> own</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">USB cable</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon49.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="50" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use an LED </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> matrix in</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">a project</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon50.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="51" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Filter </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">  unwanted noise</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">from a signal</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon46.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="52" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use a freqency </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">  analyser</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">for a project</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon9.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="53" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Order a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">PCB with</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">your design</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon47.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="54" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Repair a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">broken trace</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">on a PCB</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon54.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="55" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">automatic</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">gain control</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon10.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="56" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">PID circuit</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">with Op-Amps</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon33.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="57" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Teach a   </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> class on</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Electronics</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon40.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="58" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Learn  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> PCB Design</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Software</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon47.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="59" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use an  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> e-paper display</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">in a project</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon59.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="60" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Build a  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> Radio Frequency</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">(RF)Project</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon60.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="61" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make an  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> open source</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">project</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon61.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="62" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Use capacitive  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> touch in a PCB</tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">design</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon62.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="63" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> something </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">with PCB Art</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon63.svg"/>
+            </svg>
+        </div>
+
+        <div class="svg-wrapper" data-id="64" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make an  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> electronic </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">sculpture</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon64.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="65" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Make a switch  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> mode power </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">supply</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon21.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="66" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Release a   </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> tutorial on a </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold">project you've made</tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon66.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="67" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="10">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Create an   </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> FPGA Project </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/svg/electronics_icons/icon67.svg"/>
+            </svg>
+        </div>
+
+
+        <div class="svg-wrapper" data-id="68" data-custom="false">
+            <svg width="100" height="100" viewbox="0 0 100 100">
+                <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" class="hexagon"/>
+                <text x="50%" y="20%" text-anchor="middle" fill="black" font-size="9">
+                    <tspan x="50%" dy="1.2em" font-weight="bold">Write your  </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> own C/C++ library </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> for a sensor </tspan>
+                    <tspan x="50%" dy="1.2em" font-weight="bold"> from scratch </tspan>
+                </text>
+                <image x="35%" y="60%" width="30" height="30" href="../../web_skill_trees_resources/../../web_skill_trees_resources/svg/electronics_icons/icon68.svg"/>
+            </svg>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- Repeat for other existing SVGs -->
+        
+        <!-- Container for custom SVGs -->
+        <div id="custom-svg-container" class="svg-container"></div>
+    </div>
+    <div class="custom-svg">
+        <!-- <label for="custom-text">Set your own goal</label>  -->
+        <input type="text" id="custom-text" name="custom-text" placeholder="Set your own goal">
+        <button id="create-custom-svg">Add</button>
+        <label for="custom-text"> <b>Tip:</b> Double-tap to remove a created goal.</label>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <p style="text-align: center; margin-top: 10px;">This web version is inspired by the original work <b>Skill Trees </b> created by   <a href="https://www.makerqueen.com.au/" style="text-decoration: none; color: rgb(7, 141, 237);"> Stephanie Piper.</a> 
+                All credits for the concept go to her. You can explore the original project on <a href="https://github.com/sjpiper145/MakerSkillTree/"  style="text-decoration: none; color: rgb(0, 0, 0);">  <i class="fab fa-github"></i> </a>
+            </p>
+            
+            <p>
+                <p>Icons adapted from <a href="https://icons8.com/" target="_blank" style="text-decoration: none; color: rgb(237, 114, 7);">Icons8.com</a>
+            </p>
+          Made with <i class="fas fa-heart" style="color:red;"></i> in opensource
+        </div>
+        <div class="footer-right">
+          <i class="fab fa-creative-commons-pd"></i> 2025 <a href="https://tinkererway.dev/" style="text-decoration: none; color: rgb(7, 141, 237);">TinkererWay</a>. No Rights Reserved.
+        </div>
+      </footer>
+    <script src="asset/web_skill_tree/electronics_skill_tree/../../web_skill_trees_resources/script.js"></script>
+	<script>
+        // Specify the page identifier
+        const pageIdentifier = "electronics_skill_tree";
+    </script>
+    <script>
+        function printTables() {
+            window.print();
+        }
+    </script>
+    
+</body>
+</html>
