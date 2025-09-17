@@ -1,55 +1,69 @@
-![Project Logo](https://placehold.co/200x80?text=Logo+Placeholder "The logo I designed represents [meaning]")
+# React + TypeScript + Vite
 
-# kbd-c
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
-[![Version](https://img.shields.io/npm/v/my-package.svg)](https://www.npmjs.com/package/my-package)
-[![Tests](https://img.shields.io/github/actions/workflow/status/MYUSER/REPO/tests.yml)](https://github.com/MYUSER/REPO/actions)
+## Expanding the ESLint configuration
 
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-A skill tree aggregator and visualizer.
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Features
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-- **Ingest skill trees from other sources**
-- **Visualize progress**
-- **Adjust skill trees to your needs**
-
-
-
-## Acknowledgements
-
-I want to thank these amazing people who supported my project:
-- [@mentor-name](https://github.com/mentor) for [specific help]
-- The [library-name] community for their resources
-- My beta testers: [@tester1], [@tester2]
-
-
-
-## Appendix
-
-Additional resources I recommend:
-- [Related article I found useful]
-- [Technical deep dive documentation]
-- [Inspiration sources]
-
-
-
-## License
-
-I've released this project under the [MIT License](LICENSE.md).  
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
-
-
-
-<p align="center">
-  Made with ❤️ by S4GU4R0 at COMRADE CIRCUITS.
-</p>
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```

@@ -1,0 +1,337 @@
+[
+  {
+    "id": "e-root-pushing",
+    "source": "root",
+    "target": "pushing"
+  },
+  {
+    "id": "e-root-pulling",
+    "source": "root",
+    "target": "pulling"
+  },
+  {
+    "id": "e-root-core",
+    "source": "root",
+    "target": "core"
+  },
+  {
+    "id": "e-root-legs",
+    "source": "root",
+    "target": "legs"
+  },
+  {
+    "id": "e-pushing-pushup",
+    "source": "pushing",
+    "target": "pushup_prog"
+  },
+  {
+    "id": "e-pushing-handstand",
+    "source": "pushing",
+    "target": "handstand_prog"
+  },
+  {
+    "id": "e-pushing-planche",
+    "source": "pushing",
+    "target": "planche_prog"
+  },
+  {
+    "id": "e-pushup-wall",
+    "source": "pushup_prog",
+    "target": "wall_pushup"
+  },
+  {
+    "id": "e-wall-incline",
+    "source": "wall_pushup",
+    "target": "incline_pushup"
+  },
+  {
+    "id": "e-incline-knee",
+    "source": "incline_pushup",
+    "target": "knee_pushup"
+  },
+  {
+    "id": "e-knee-full",
+    "source": "knee_pushup",
+    "target": "full_pushup"
+  },
+  {
+    "id": "e-full-diamond",
+    "source": "full_pushup",
+    "target": "diamond_pushup"
+  },
+  {
+    "id": "e-diamond-archer",
+    "source": "diamond_pushup",
+    "target": "archer_pushup"
+  },
+  {
+    "id": "e-archer-onearm",
+    "source": "archer_pushup",
+    "target": "one_arm_pushup"
+  },
+  {
+    "id": "e-hs-wall",
+    "source": "handstand_prog",
+    "target": "wall_walk"
+  },
+  {
+    "id": "e-wall-chest",
+    "source": "wall_walk",
+    "target": "chest_wall_hs"
+  },
+  {
+    "id": "e-chest-hollow",
+    "source": "chest_wall_hs",
+    "target": "hollow_hold"
+  },
+  {
+    "id": "e-hollow-kickup",
+    "source": "hollow_hold",
+    "target": "kick_up"
+  },
+  {
+    "id": "e-kickup-freestanding",
+    "source": "kick_up",
+    "target": "freestanding_hs"
+  },
+  {
+    "id": "e-freestanding-hspu",
+    "source": "freestanding_hs",
+    "target": "hspu"
+  },
+  {
+    "id": "e-planche-lean",
+    "source": "planche_prog",
+    "target": "planche_lean"
+  },
+  {
+    "id": "e-lean-frog",
+    "source": "planche_lean",
+    "target": "frog_stand"
+  },
+  {
+    "id": "e-frog-tuck",
+    "source": "frog_stand",
+    "target": "tuck_planche"
+  },
+  {
+    "id": "e-tuck-advtuck",
+    "source": "tuck_planche",
+    "target": "adv_tuck_planche"
+  },
+  {
+    "id": "e-advtuck-straddle",
+    "source": "adv_tuck_planche",
+    "target": "straddle_planche"
+  },
+  {
+    "id": "e-straddle-full",
+    "source": "straddle_planche",
+    "target": "full_planche"
+  },
+  {
+    "id": "e-pulling-pullup",
+    "source": "pulling",
+    "target": "pullup_prog"
+  },
+  {
+    "id": "e-pulling-frontlever",
+    "source": "pulling",
+    "target": "front_lever_prog"
+  },
+  {
+    "id": "e-pulling-muscleup",
+    "source": "pulling",
+    "target": "muscle_up_prog"
+  },
+  {
+    "id": "e-pullup-hang",
+    "source": "pullup_prog",
+    "target": "dead_hang"
+  },
+  {
+    "id": "e-hang-scapular",
+    "source": "dead_hang",
+    "target": "scapular_pulls"
+  },
+  {
+    "id": "e-scapular-negative",
+    "source": "scapular_pulls",
+    "target": "negative_pullup"
+  },
+  {
+    "id": "e-negative-assisted",
+    "source": "negative_pullup",
+    "target": "assisted_pullup"
+  },
+  {
+    "id": "e-assisted-full",
+    "source": "assisted_pullup",
+    "target": "full_pullup"
+  },
+  {
+    "id": "e-full-chest",
+    "source": "full_pullup",
+    "target": "chest_pullup"
+  },
+  {
+    "id": "e-chest-weighted",
+    "source": "chest_pullup",
+    "target": "weighted_pullup"
+  },
+  {
+    "id": "e-fl-inverted",
+    "source": "front_lever_prog",
+    "target": "inverted_hang"
+  },
+  {
+    "id": "e-inverted-tuckfl",
+    "source": "inverted_hang",
+    "target": "tuck_fl"
+  },
+  {
+    "id": "e-tuckfl-advtuckfl",
+    "source": "tuck_fl",
+    "target": "adv_tuck_fl"
+  },
+  {
+    "id": "e-advtuckfl-oneleg",
+    "source": "adv_tuck_fl",
+    "target": "one_leg_fl"
+  },
+  {
+    "id": "e-oneleg-straddlefl",
+    "source": "one_leg_fl",
+    "target": "straddle_fl"
+  },
+  {
+    "id": "e-straddlefl-fullfl",
+    "source": "straddle_fl",
+    "target": "full_fl"
+  },
+  {
+    "id": "e-mu-high",
+    "source": "muscle_up_prog",
+    "target": "high_pullup"
+  },
+  {
+    "id": "e-high-transition",
+    "source": "high_pullup",
+    "target": "transition_work"
+  },
+  {
+    "id": "e-transition-negmu",
+    "source": "transition_work",
+    "target": "negative_mu"
+  },
+  {
+    "id": "e-negmu-kipping",
+    "source": "negative_mu",
+    "target": "kipping_mu"
+  },
+  {
+    "id": "e-kipping-strict",
+    "source": "kipping_mu",
+    "target": "strict_mu"
+  },
+  {
+    "id": "e-core-lsit",
+    "source": "core",
+    "target": "l_sit_prog"
+  },
+  {
+    "id": "e-core-flag",
+    "source": "core",
+    "target": "flag_prog"
+  },
+  {
+    "id": "e-lsit-support",
+    "source": "l_sit_prog",
+    "target": "support_hold"
+  },
+  {
+    "id": "e-support-tucked",
+    "source": "support_hold",
+    "target": "tucked_l_sit"
+  },
+  {
+    "id": "e-tucked-oneleg",
+    "source": "tucked_l_sit",
+    "target": "one_leg_l_sit"
+  },
+  {
+    "id": "e-oneleg-full",
+    "source": "one_leg_l_sit",
+    "target": "full_l_sit"
+  },
+  {
+    "id": "e-full-vsit",
+    "source": "full_l_sit",
+    "target": "v_sit"
+  },
+  {
+    "id": "e-flag-side",
+    "source": "flag_prog",
+    "target": "side_lever"
+  },
+  {
+    "id": "e-side-hold",
+    "source": "side_lever",
+    "target": "flag_hold"
+  },
+  {
+    "id": "e-hold-neg",
+    "source": "flag_hold",
+    "target": "neg_flag"
+  },
+  {
+    "id": "e-neg-fullflag",
+    "source": "neg_flag",
+    "target": "full_flag"
+  },
+  {
+    "id": "e-legs-squat",
+    "source": "legs",
+    "target": "squat_prog"
+  },
+  {
+    "id": "e-legs-shrimp",
+    "source": "legs",
+    "target": "shrimp_prog"
+  },
+  {
+    "id": "e-squat-assisted",
+    "source": "squat_prog",
+    "target": "assisted_squat"
+  },
+  {
+    "id": "e-assisted-fullsquat",
+    "source": "assisted_squat",
+    "target": "full_squat"
+  },
+  {
+    "id": "e-fullsquat-jump",
+    "source": "full_squat",
+    "target": "jump_squat"
+  },
+  {
+    "id": "e-jump-singleleg",
+    "source": "jump_squat",
+    "target": "single_leg_squat"
+  },
+  {
+    "id": "e-singleleg-pistol",
+    "source": "single_leg_squat",
+    "target": "pistol_squat"
+  },
+  {
+    "id": "e-shrimp-assisted",
+    "source": "shrimp_prog",
+    "target": "assisted_shrimp"
+  },
+  {
+    "id": "e-assistedshrimp-full",
+    "source": "assisted_shrimp",
+    "target": "full_shrimp"
+  }
+]

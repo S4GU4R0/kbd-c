@@ -1,0 +1,682 @@
+[
+  {
+    "id": "root",
+    "position": {
+      "x": 400,
+      "y": 0
+    },
+    "data": {
+      "label": "Bodyweight Fitness Skills"
+    }
+  },
+  {
+    "id": "pushing",
+    "position": {
+      "x": 100,
+      "y": 120
+    },
+    "data": {
+      "label": "Pushing Skills"
+    }
+  },
+  {
+    "id": "pulling",
+    "position": {
+      "x": 300,
+      "y": 120
+    },
+    "data": {
+      "label": "Pulling Skills"
+    }
+  },
+  {
+    "id": "core",
+    "position": {
+      "x": 500,
+      "y": 120
+    },
+    "data": {
+      "label": "Core & Balance"
+    }
+  },
+  {
+    "id": "legs",
+    "position": {
+      "x": 700,
+      "y": 120
+    },
+    "data": {
+      "label": "Leg Skills"
+    }
+  },
+  {
+    "id": "pushup_prog",
+    "position": {
+      "x": 50,
+      "y": 200
+    },
+    "data": {
+      "label": "Push-up Progressions"
+    }
+  },
+  {
+    "id": "wall_pushup",
+    "position": {
+      "x": 20,
+      "y": 280
+    },
+    "data": {
+      "label": "Wall Push-up"
+    }
+  },
+  {
+    "id": "incline_pushup",
+    "position": {
+      "x": 20,
+      "y": 320
+    },
+    "data": {
+      "label": "Incline Push-up"
+    }
+  },
+  {
+    "id": "knee_pushup",
+    "position": {
+      "x": 20,
+      "y": 360
+    },
+    "data": {
+      "label": "Knee Push-up"
+    }
+  },
+  {
+    "id": "full_pushup",
+    "position": {
+      "x": 20,
+      "y": 400
+    },
+    "data": {
+      "label": "Full Push-up"
+    }
+  },
+  {
+    "id": "diamond_pushup",
+    "position": {
+      "x": 20,
+      "y": 440
+    },
+    "data": {
+      "label": "Diamond Push-up"
+    }
+  },
+  {
+    "id": "archer_pushup",
+    "position": {
+      "x": 20,
+      "y": 480
+    },
+    "data": {
+      "label": "Archer Push-up"
+    }
+  },
+  {
+    "id": "one_arm_pushup",
+    "position": {
+      "x": 20,
+      "y": 520
+    },
+    "data": {
+      "label": "One Arm Push-up"
+    }
+  },
+  {
+    "id": "handstand_prog",
+    "position": {
+      "x": 150,
+      "y": 200
+    },
+    "data": {
+      "label": "Handstand Progressions"
+    }
+  },
+  {
+    "id": "wall_walk",
+    "position": {
+      "x": 160,
+      "y": 280
+    },
+    "data": {
+      "label": "Wall Walk-up"
+    }
+  },
+  {
+    "id": "chest_wall_hs",
+    "position": {
+      "x": 160,
+      "y": 320
+    },
+    "data": {
+      "label": "Chest-to-Wall HS"
+    }
+  },
+  {
+    "id": "hollow_hold",
+    "position": {
+      "x": 160,
+      "y": 360
+    },
+    "data": {
+      "label": "Hollow Body Hold"
+    }
+  },
+  {
+    "id": "kick_up",
+    "position": {
+      "x": 160,
+      "y": 400
+    },
+    "data": {
+      "label": "Handstand Kick-up"
+    }
+  },
+  {
+    "id": "freestanding_hs",
+    "position": {
+      "x": 160,
+      "y": 440
+    },
+    "data": {
+      "label": "Freestanding HS"
+    }
+  },
+  {
+    "id": "hspu",
+    "position": {
+      "x": 160,
+      "y": 480
+    },
+    "data": {
+      "label": "Handstand Push-up"
+    }
+  },
+  {
+    "id": "planche_prog",
+    "position": {
+      "x": 50,
+      "y": 600
+    },
+    "data": {
+      "label": "Planche Progressions"
+    }
+  },
+  {
+    "id": "planche_lean",
+    "position": {
+      "x": 20,
+      "y": 680
+    },
+    "data": {
+      "label": "Planche Lean"
+    }
+  },
+  {
+    "id": "frog_stand",
+    "position": {
+      "x": 20,
+      "y": 720
+    },
+    "data": {
+      "label": "Frog Stand"
+    }
+  },
+  {
+    "id": "tuck_planche",
+    "position": {
+      "x": 20,
+      "y": 760
+    },
+    "data": {
+      "label": "Tuck Planche"
+    }
+  },
+  {
+    "id": "adv_tuck_planche",
+    "position": {
+      "x": 20,
+      "y": 800
+    },
+    "data": {
+      "label": "Advanced Tuck"
+    }
+  },
+  {
+    "id": "straddle_planche",
+    "position": {
+      "x": 20,
+      "y": 840
+    },
+    "data": {
+      "label": "Straddle Planche"
+    }
+  },
+  {
+    "id": "full_planche",
+    "position": {
+      "x": 20,
+      "y": 880
+    },
+    "data": {
+      "label": "Full Planche"
+    }
+  },
+  {
+    "id": "pullup_prog",
+    "position": {
+      "x": 250,
+      "y": 200
+    },
+    "data": {
+      "label": "Pull-up Progressions"
+    }
+  },
+  {
+    "id": "dead_hang",
+    "position": {
+      "x": 220,
+      "y": 280
+    },
+    "data": {
+      "label": "Dead Hang"
+    }
+  },
+  {
+    "id": "scapular_pulls",
+    "position": {
+      "x": 220,
+      "y": 320
+    },
+    "data": {
+      "label": "Scapular Pulls"
+    }
+  },
+  {
+    "id": "negative_pullup",
+    "position": {
+      "x": 220,
+      "y": 360
+    },
+    "data": {
+      "label": "Negative Pull-up"
+    }
+  },
+  {
+    "id": "assisted_pullup",
+    "position": {
+      "x": 220,
+      "y": 400
+    },
+    "data": {
+      "label": "Assisted Pull-up"
+    }
+  },
+  {
+    "id": "full_pullup",
+    "position": {
+      "x": 220,
+      "y": 440
+    },
+    "data": {
+      "label": "Full Pull-up"
+    }
+  },
+  {
+    "id": "chest_pullup",
+    "position": {
+      "x": 220,
+      "y": 480
+    },
+    "data": {
+      "label": "Chest-to-Bar"
+    }
+  },
+  {
+    "id": "weighted_pullup",
+    "position": {
+      "x": 220,
+      "y": 520
+    },
+    "data": {
+      "label": "Weighted Pull-up"
+    }
+  },
+  {
+    "id": "front_lever_prog",
+    "position": {
+      "x": 350,
+      "y": 200
+    },
+    "data": {
+      "label": "Front Lever Progressions"
+    }
+  },
+  {
+    "id": "inverted_hang",
+    "position": {
+      "x": 360,
+      "y": 280
+    },
+    "data": {
+      "label": "Inverted Hang"
+    }
+  },
+  {
+    "id": "tuck_fl",
+    "position": {
+      "x": 360,
+      "y": 320
+    },
+    "data": {
+      "label": "Tuck Front Lever"
+    }
+  },
+  {
+    "id": "adv_tuck_fl",
+    "position": {
+      "x": 360,
+      "y": 360
+    },
+    "data": {
+      "label": "Advanced Tuck FL"
+    }
+  },
+  {
+    "id": "one_leg_fl",
+    "position": {
+      "x": 360,
+      "y": 400
+    },
+    "data": {
+      "label": "One Leg FL"
+    }
+  },
+  {
+    "id": "straddle_fl",
+    "position": {
+      "x": 360,
+      "y": 440
+    },
+    "data": {
+      "label": "Straddle FL"
+    }
+  },
+  {
+    "id": "full_fl",
+    "position": {
+      "x": 360,
+      "y": 480
+    },
+    "data": {
+      "label": "Full Front Lever"
+    }
+  },
+  {
+    "id": "muscle_up_prog",
+    "position": {
+      "x": 250,
+      "y": 580
+    },
+    "data": {
+      "label": "Muscle Up Progressions"
+    }
+  },
+  {
+    "id": "high_pullup",
+    "position": {
+      "x": 220,
+      "y": 660
+    },
+    "data": {
+      "label": "High Pull-up"
+    }
+  },
+  {
+    "id": "transition_work",
+    "position": {
+      "x": 220,
+      "y": 700
+    },
+    "data": {
+      "label": "Transition Work"
+    }
+  },
+  {
+    "id": "negative_mu",
+    "position": {
+      "x": 220,
+      "y": 740
+    },
+    "data": {
+      "label": "Negative MU"
+    }
+  },
+  {
+    "id": "kipping_mu",
+    "position": {
+      "x": 220,
+      "y": 780
+    },
+    "data": {
+      "label": "Kipping MU"
+    }
+  },
+  {
+    "id": "strict_mu",
+    "position": {
+      "x": 220,
+      "y": 820
+    },
+    "data": {
+      "label": "Strict Muscle Up"
+    }
+  },
+  {
+    "id": "l_sit_prog",
+    "position": {
+      "x": 450,
+      "y": 200
+    },
+    "data": {
+      "label": "L-Sit Progressions"
+    }
+  },
+  {
+    "id": "support_hold",
+    "position": {
+      "x": 420,
+      "y": 280
+    },
+    "data": {
+      "label": "Support Hold"
+    }
+  },
+  {
+    "id": "tucked_l_sit",
+    "position": {
+      "x": 420,
+      "y": 320
+    },
+    "data": {
+      "label": "Tucked L-Sit"
+    }
+  },
+  {
+    "id": "one_leg_l_sit",
+    "position": {
+      "x": 420,
+      "y": 360
+    },
+    "data": {
+      "label": "One Leg L-Sit"
+    }
+  },
+  {
+    "id": "full_l_sit",
+    "position": {
+      "x": 420,
+      "y": 400
+    },
+    "data": {
+      "label": "Full L-Sit"
+    }
+  },
+  {
+    "id": "v_sit",
+    "position": {
+      "x": 420,
+      "y": 440
+    },
+    "data": {
+      "label": "V-Sit"
+    }
+  },
+  {
+    "id": "flag_prog",
+    "position": {
+      "x": 550,
+      "y": 200
+    },
+    "data": {
+      "label": "Human Flag Progressions"
+    }
+  },
+  {
+    "id": "side_lever",
+    "position": {
+      "x": 560,
+      "y": 280
+    },
+    "data": {
+      "label": "Side Lever"
+    }
+  },
+  {
+    "id": "flag_hold",
+    "position": {
+      "x": 560,
+      "y": 320
+    },
+    "data": {
+      "label": "Flag Hold"
+    }
+  },
+  {
+    "id": "neg_flag",
+    "position": {
+      "x": 560,
+      "y": 360
+    },
+    "data": {
+      "label": "Negative Flag"
+    }
+  },
+  {
+    "id": "full_flag",
+    "position": {
+      "x": 560,
+      "y": 400
+    },
+    "data": {
+      "label": "Full Human Flag"
+    }
+  },
+  {
+    "id": "squat_prog",
+    "position": {
+      "x": 650,
+      "y": 200
+    },
+    "data": {
+      "label": "Squat Progressions"
+    }
+  },
+  {
+    "id": "assisted_squat",
+    "position": {
+      "x": 620,
+      "y": 280
+    },
+    "data": {
+      "label": "Assisted Squat"
+    }
+  },
+  {
+    "id": "full_squat",
+    "position": {
+      "x": 620,
+      "y": 320
+    },
+    "data": {
+      "label": "Full Squat"
+    }
+  },
+  {
+    "id": "jump_squat",
+    "position": {
+      "x": 620,
+      "y": 360
+    },
+    "data": {
+      "label": "Jump Squat"
+    }
+  },
+  {
+    "id": "single_leg_squat",
+    "position": {
+      "x": 620,
+      "y": 400
+    },
+    "data": {
+      "label": "Single Leg Squat"
+    }
+  },
+  {
+    "id": "pistol_squat",
+    "position": {
+      "x": 620,
+      "y": 440
+    },
+    "data": {
+      "label": "Pistol Squat"
+    }
+  },
+  {
+    "id": "shrimp_prog",
+    "position": {
+      "x": 750,
+      "y": 200
+    },
+    "data": {
+      "label": "Shrimp Squat Progressions"
+    }
+  },
+  {
+    "id": "assisted_shrimp",
+    "position": {
+      "x": 760,
+      "y": 280
+    },
+    "data": {
+      "label": "Assisted Shrimp"
+    }
+  },
+  {
+    "id": "full_shrimp",
+    "position": {
+      "x": 760,
+      "y": 320
+    },
+    "data": {
+      "label": "Full Shrimp Squat"
+    }
+  }
+]
