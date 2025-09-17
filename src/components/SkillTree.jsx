@@ -5,12 +5,13 @@ import {
   applyEdgeChanges,
   addEdge,
 } from '@xyflow/react';
-import { } from "./SkillNodes"
+import { DisabledNode } from "./SkillNodes"
 import redditBWFNodes from "../assets/trees/reddit-bwf/nodes.json";
 import redditBWFEdges from "../assets/trees/reddit-bwf/edges.json";
 
 const nodeTypes = {
   // textUpdater: TextUpdaterNode,
+  disabled: DisabledNode
 };
 const initialNodes = [
   // {
@@ -37,7 +38,8 @@ const initialNodes = [
 ];
 
 const initialEdges = [
-  { id: 'n1-n2', source: 'n1', target: 'n2' }, ...redditBWFEdges
+  // { id: 'n1-n2', source: 'n1', target: 'n2' }, 
+  ...redditBWFEdges
 ];
 
 export default function SkillTree() {
