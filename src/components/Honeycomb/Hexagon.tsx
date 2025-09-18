@@ -8,10 +8,10 @@ const Hexagon: React.FC<HexagonProps> = ({
   style = {},
 }) => {
   const { gap } = React.useContext(HoneycombContext);
-  const clipPath = `polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)`;
+  // const clipPath = `polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)`;
   return (
     <div
-      className={className}
+      className={className + " mask mask-hexagon"}
       style={{
         ...style,
         position: "absolute",
@@ -19,7 +19,7 @@ const Hexagon: React.FC<HexagonProps> = ({
         left: gap / 2,
         right: gap / 2,
         bottom: gap / 2,
-        clipPath,
+        // clipPath,
         pointerEvents: "auto",
       }}
     >

@@ -8,6 +8,7 @@ import {
 import { DisabledNode } from "./SkillNodes"
 import redditBWFNodes from "../../assets/trees/reddit-bwf/nodes.json";
 import redditBWFEdges from "../../assets/trees/reddit-bwf/edges.json";
+import '@xyflow/react/dist/style.css';
 
 const nodeTypes = {
   // textUpdater: TextUpdaterNode,
