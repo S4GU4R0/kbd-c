@@ -11,9 +11,9 @@ const App = () => {
       <Viewer key={1}>
         <HoneycombGrid />
       </Viewer>
-      {/* <Viewer key={2}>
+      <Viewer key={2}>
         <SkillTree />
-      </Viewer> */}
+      </Viewer>
     </React.Fragment>
   );
 };
