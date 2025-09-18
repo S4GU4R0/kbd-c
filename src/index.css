@@ -1,45 +1,8 @@
 @import "tailwindcss";
-@import '@xyflow/react/dist/style.css';
+/* @import '@xyflow/react/dist/style.css'; */
 @plugin "daisyui";
 
-@plugin "daisyui/theme" {
+@plugin "daisyui" {
     themes: synthwave --default;
 
-}
-
-:root {
-    /* Map ReactFlow variables to DaisyUI's CSS variables */
-
-    --xy-edge-stroke-default: var(--color-base-content);
-    --xy-edge-stroke-selected-default: var(--color-primary);
-
-    --xy-connectionline-stroke-default: var(--color-base-content);
-
-    --xy-attribution-background-color-default: var(--color-base-100);
-    --xy-minimap-background-color-default: var(--color-base-100);
-
-    --xy-background-pattern-dots-color-default: var(--color-base-300);
-    --xy-background-pattern-line-color-default: var(--color-base-200);
-    --xy-background-pattern-cross-color-default: var(--color-base-200);
-
-    --xy-node-color-default: var(--color-base-content);
-    --xy-node-border-default: 1px solid var(--color-base-300);
-    --xy-node-background-color-default: var(--color-base-100);
-    --xy-node-group-background-color-default: var(--color-base-200);
-
-    --xy-node-boxshadow-selected-default: 0 0 0 0.5px var(--color-primary);
-
-    --xy-handle-background-color-default: var(--color-primary);
-    --xy-handle-border-color-default: var(--color-base-100);
-
-    --xy-selection-background-color-default: var(--color-primary);
-    --xy-selection-border-default: 1px dotted var(--color-primary);
-
-    --xy-controls-button-background-color-default: var(--color-base-100);
-    --xy-controls-button-background-color-hover-default: var(--color-base-200);
-    --xy-controls-button-color-default: var(--color-base-content);
-    --xy-controls-button-color-hover-default: var(--color-base-content);
-    --xy-controls-button-border-color-default: var(--color-base-300);
-
-    --xy-resize-background-color-default: var(--color-primary);
 }

@@ -1,15 +1,21 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
+import { HoneycombGrid } from "./components/Honeycomb"
+import Viewer from "./components/Viewer"
 import SkillTree from "./components/SkillTree"
-import './App.css'
+import "./App.css"
 
-function App() {
+const App = () => {
+
   return (
-    <>
-      <div className="container">
+    <React.Fragment>
+      <Viewer>
+        <HoneycombGrid />
+      </Viewer>
+      <Viewer>
         <SkillTree />
-      </div>
-    </>
-  )
-}
+      </Viewer>
+    </React.Fragment>
+  );
+};
 
-export default App
+export default App;
